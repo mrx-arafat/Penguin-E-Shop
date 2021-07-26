@@ -133,8 +133,8 @@ header {
   margin: 5% auto;
   display: flex;
 }
-.lt,
-.rt {
+.container-box .lt,
+.container-box .rt {
   width: 50%;
 }
 .box {
