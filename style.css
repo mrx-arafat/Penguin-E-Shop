@@ -74,7 +74,7 @@ header {
 .yellow {
   color: #fabe4c;
 }
-.btn {
+.lt .btn {
   margin-top: 50px;
   margin-left: 10%;
 }
@@ -108,4 +108,37 @@ header {
     margin-bottom: 40px;
     width: 100%;
   }
+}
+
+/* card */
+
+.card-container {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  width: 320px;
+  padding: 20px;
+
+  background-color: white;
+  border-radius: 5px;
+
+  box-shadow: 0.2rem 0.2rem 2rem rgba(158, 155, 153, 0.397);
+  overflow: hidden;
+}
+.card img {
+  width: 293px;
+  height: 293px;
+}
+.price {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.price h3 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #fabe4c;
 }
