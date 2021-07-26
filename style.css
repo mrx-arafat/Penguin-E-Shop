@@ -45,11 +45,16 @@ header {
 
   color: #3c3c3c;
 }
+
+.container-ban {
+  display: flex;
+  justify-content: space-around;
+}
 .lt {
   width: 50%;
 }
 .text {
-  margin-left: 15%;
+  margin-left: 10%;
 }
 .text > h1 {
   margin: 10% auto;
@@ -71,7 +76,7 @@ header {
 }
 .btn {
   margin-top: 50px;
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 .btn a {
@@ -81,4 +86,26 @@ header {
   color: #3c3c3c;
   border-radius: 15px;
   font-weight: 600;
+}
+.rt {
+  padding-right: 5%;
+}
+
+/* media query-------------
+--------------------- */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container-nav {
+    display: none;
+  }
+
+  .container-ban {
+    flex-direction: column;
+  }
+
+  .rt,
+  .lt {
+    margin-bottom: 40px;
+    width: 100%;
+  }
 }
