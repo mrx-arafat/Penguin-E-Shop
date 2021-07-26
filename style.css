@@ -43,7 +43,7 @@ header {
   font-size: 16px;
   line-height: 24px;
 
-  color: #3c3c3c;
+  color: #86a11a;
 }
 
 .container-ban {
@@ -88,7 +88,7 @@ header {
   font-weight: 600;
 }
 .rt {
-  padding-right: 5%;
+  padding: 0 5% 6% 0;
 }
 
 /* media query-------------
@@ -108,18 +108,29 @@ header {
     margin-bottom: 40px;
     width: 100%;
   }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 /* card */
 
 .card-container {
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-around;
+}
+.heading {
+  font-size: 30px;
+  margin: 5% auto 0 5%;
 }
 
 .card {
   width: 320px;
   padding: 20px;
-
+  margin: 5% auto;
   background-color: white;
   border-radius: 5px;
 
